@@ -20,8 +20,9 @@ class JiraOpenInBrowserAction(name: String, private val annotation: FileAnnotati
         val lineInfo = annotation.getLineInfo(myLineNumber) ?: return
         val message = lineInfo.subject
         val matchResult = regex.find(message) ?: return
-        if (matchResult.groups.isEmpty()) return
-        val id = matchResult.groups[0]
+        if (matchResult.groups.size < 2) return
+        val group = matchResult.groups[1] ?: return
+        val id = group.value
 
         BrowserUtil.browse("https://opengamma.atlassian.net/browse/$id")
     }
