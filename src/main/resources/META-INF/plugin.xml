@@ -22,11 +22,4 @@
         <listener class="com.github.mduffin95.intellijplugin.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
-<!--    <actions>-->
-<!--        <action id="com.github.mduffin95.intellijplugin.actions.PopupDialogAction"-->
-<!--                class="com.github.mduffin95.intellijplugin.actions.PopupDialogAction">-->
-
-<!--            <add-to-group group-id="Vcs.Log.ContextMenu" />-->
-<!--        </action>-->
-<!--    </actions>-->
 </idea-plugin>
