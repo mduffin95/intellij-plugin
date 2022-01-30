@@ -6,6 +6,6 @@ import com.intellij.openapi.vcs.annotate.FileAnnotation
 
 class JiraGutterActionProvider : AnnotationGutterActionProvider {
     override fun createAction(annotation: FileAnnotation): AnAction {
-        return JiraOpenInBrowserAction("Matt", annotation)
+        return JiraOpenInBrowserAction(annotation)
     }
 }

@@ -10,6 +10,7 @@
     <depends>com.intellij.modules.vcs</depends>
     <depends>com.intellij.modules.lang</depends>
     <depends>Git4Idea</depends>
+    <depends>com.intellij.tasks</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.mduffin95.intellijplugin.services.MyApplicationService"/>

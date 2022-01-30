@@ -6,8 +6,15 @@ import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.vcs.annotate.FileAnnotation
 import com.intellij.openapi.vcs.annotate.UpToDateLineNumberListener
 import git4idea.annotate.GitFileAnnotation
+import icons.TasksCoreIcons
+import java.util.function.Supplier
 
-class JiraOpenInBrowserAction(name: String, private val annotation: FileAnnotation) : AnAction(name), UpToDateLineNumberListener {
+private val supplier = Supplier { "Open Jira" }
+private val icon = TasksCoreIcons.Jira
+
+class JiraOpenInBrowserAction(private val annotation: FileAnnotation):
+    AnAction(supplier, icon),
+    UpToDateLineNumberListener {
 
     private var myLineNumber = -1
     private val regex = Regex("^([A-Z]+-\\d+): .*\$")
