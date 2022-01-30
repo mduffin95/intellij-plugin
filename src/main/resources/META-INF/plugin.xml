@@ -14,12 +14,6 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.mduffin95.intellijplugin.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.mduffin95.intellijplugin.services.MyProjectService"/>
         <vcsAnnotationGutterActionProvider implementation="com.github.mduffin95.intellijplugin.actions.JiraGutterActionProvider"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.mduffin95.intellijplugin.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>
