@@ -1,4 +1,4 @@
-package com.github.mduffin95.intellijplugin.actions
+package com.github.mduffin95.intellijplugin
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.vcs.annotate.AnnotationGutterActionProvider

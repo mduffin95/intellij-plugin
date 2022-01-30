@@ -13,7 +13,6 @@
     <depends>com.intellij.tasks</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.mduffin95.intellijplugin.services.MyApplicationService"/>
-        <vcsAnnotationGutterActionProvider implementation="com.github.mduffin95.intellijplugin.actions.JiraGutterActionProvider"/>
+        <vcsAnnotationGutterActionProvider implementation="com.github.mduffin95.intellijplugin.JiraGutterActionProvider"/>
     </extensions>
 </idea-plugin>

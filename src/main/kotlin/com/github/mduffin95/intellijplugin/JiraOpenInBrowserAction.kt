@@ -1,4 +1,4 @@
-package com.github.mduffin95.intellijplugin.actions
+package com.github.mduffin95.intellijplugin
 
 import com.intellij.ide.BrowserUtil
 import com.intellij.openapi.actionSystem.AnAction
